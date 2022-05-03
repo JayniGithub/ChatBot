@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.wrapper{
+    width: 370px;
+    border: 1px solid lightgray;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.wrapper .title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+    line-height: 60px;
+    background: #306bc5;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.wrapper .form{
+    padding: 20px 15px;
+    min-height: 450px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.wrapper .form .inbox{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.wrapper .form .user-inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+
+.wrapper .form .inbox .icon{
+    width: 40px;
+    height: 40px;
+    background: #306bc5;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.wrapper .form .inbox .msg-header{
+    width: 53%;
+    margin-left: 10px;    
+}
+
+.form .inbox .msg-header p{
+    word-wrap: break-word;
+    background: #306bc5;
+    text-align: justify;
+    padding: 10px;
+    color: #fff;
+    border-radius: 0 10px 10px 10px ;
+}
+
+.wrapper .form .user-inbox p{
+    word-wrap: break-word;
+    border-radius: 10px 10px 0 10px;
+    color: #333;
+    background: #cccccc;
+}
+
+.wrapper .typing-area{
+    display: flex;
+    height: 60px;
+    background: #dfdede;
+    border-top: 1px solid lightgray;
+    border-radius: 0 0 5px 5px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.wrapper .typing-area .input-field{
+    position: relative;
+    width: 355px;
+    height: 40px;
+}
+
+.wrapper .typing-area .input-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    background: #fff;
+    padding: 0 80px 0 15px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.wrapper .typing-area .input-field button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 65px;
+    height: 30px;
+    background: #306bc5;
+    color: #fff;
+    border: 1px solid #306bc5;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    transform: translateY(-50%);
+}
