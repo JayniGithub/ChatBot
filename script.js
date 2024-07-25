@@ -11,8 +11,8 @@ $(document).ready(function(){
             type: 'POST',
             data: 'text='+$value,
             success: function(result){
-                $replay = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user-alt"></i></div><div class="msg-header"><p>'+ result +'</p></div></div>';
-                $(".form").append($replay);
+                $response = '<div class="bot-inbox inbox"><div class="icon"><img src="./img/chatbot old.jpg" style="width:45px;"/></div><div class="msg-header"><p>'+ result +'</p></div></div>';
+                $(".form").append($response);
             }
         });
     });

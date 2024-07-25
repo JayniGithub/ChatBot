@@ -18,14 +18,14 @@
         </div>
 
         <div class="form">
-            <div class="bot-inbox inbox">
+            <!-- <div class="bot-inbox inbox">
                 <div class="icon">
                     <i class="fas fa-user-alt"></i>
                 </div>
                 <div class="msg-header">
                     <p>Hi.... My name is Erica. Come, Let's chat.</p>
                 </div>
-            </div>            
+            </div>             -->
         </div>
         
         <div class="typing-area">
