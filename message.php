@@ -10,7 +10,7 @@
         $text = $_POST['text'];
     }
 
-    $client = new Client('AIzaSyBHhjk4jXNfk2fJNPibQZmGnmWzUVoiXDk');
+    $client = new Client('YOUR API KEY');
 
     $response = $client->geminiPro()->generateContent(
         new TextPart($text),
