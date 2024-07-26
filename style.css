@@ -58,7 +58,7 @@ html,body{
 }
 
 .wrapper .form .inbox .msg-header{
-    width: 53%;
+    width: 100%;
     margin-left: 10px;    
 }
 
@@ -118,4 +118,43 @@ html,body{
     cursor: pointer;
     border-radius: 3px;
     transform: translateY(-50%);
+}
+
+.wrapper .form .loading-anim-div {
+    width: 40px;
+    height: 20px;
+    background-color: #306bc5;
+    border-radius: 0 10px 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.loading-anim-div .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    animation: scaling 2.5s ease-in-out infinite;
+}
+
+@keyframes scaling {
+    0%, 100% {
+        transform: scale(0.5);
+        background-color: #cccccc;
+    }
+    50% {
+        transform: scale(1);
+        background-color: white;
+    }
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.dot:nth-child(3) {
+    animation-delay: 0.6s;
 }
